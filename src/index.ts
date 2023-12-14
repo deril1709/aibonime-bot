@@ -15,6 +15,9 @@ client.on('messageCreate', (msg) =>{
     if(msg.content === 'hello'){
         msg.reply('<:tarbon:802584478652170250>')
     }
+    if(msg.content === 'aibonime'){
+        msg.reply('<:aibologo1:802580099559194625>')
+    }
     console.log(`${msg.content}`);
 })
 
