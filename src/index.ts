@@ -20,6 +20,19 @@ client.on('messageCreate', (msg) =>{
     }
     console.log(`${msg.content}`);
 })
+client.on('interactionCreate', (interaction) =>{
+    if(!interaction.isChatInputCommand()) return;
+    if(interaction.commandName === 'hey'){
+        interaction.reply('still cannot play');
+    }
+    if(interaction.commandName === 'ping'){
+        interaction.reply('pong!');
+    }
+    if(interaction.commandName === 'play'){
+        interaction.reply('insert music links');
+    }
 
+})
+   
 
-client.login(process.env.token)
+client.login(process.env.TOKEN)

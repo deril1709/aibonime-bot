@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "reg": "tsx watch src/register-commands.ts",
     "build": "tsc",
     "start": "node ."
   },
