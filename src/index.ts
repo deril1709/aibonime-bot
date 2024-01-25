@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { Client, Message } from 'discord.js';
+import { Client, Message, EmbedBuilder } from 'discord.js';
 
 
 const client = new Client({
@@ -30,6 +30,13 @@ client.on('interactionCreate', (interaction) =>{
     }
     if(interaction.commandName === 'play'){
         interaction.reply('insert music links');
+    }
+    if(interaction.commandName === 'aibonime'){
+        const embed = new EmbedBuilder()
+        .setTitle('embed title')
+        .setDescription('embed description');
+        
+        interaction.reply({ embeds: [embed]});
     }
 
 })

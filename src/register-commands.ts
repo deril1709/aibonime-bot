@@ -13,6 +13,10 @@ const commands = [
   {
     name: 'play',
     description: 'play music',
+  },
+  {
+    name: 'aibonime',
+    description: 'aibonime'
   }
 ];
 
