@@ -34,7 +34,8 @@ client.on('interactionCreate', (interaction) =>{
     if(interaction.commandName === 'aibonime'){
         const embed = new EmbedBuilder()
         .setTitle('embed title')
-        .setDescription('embed description');
+        .setDescription('embed description')
+        .setColor(0x4287f5);
         
         interaction.reply({ embeds: [embed]});
     }
